@@ -28,14 +28,15 @@
     <h3 class="w-[100%] text-center text-[#A4FFAF] text-[1.4em]">Password Generator</h3>
 
     <div class="bg-[#24232C] p-[1em] flex justify-between items-center">
-        <input type="text" readonly placeholder="P4$5W0rD!" class="bg-[#24232C] text-[#e6e5ea]">
-        <p class="bi bi-clipboard text-[#A4FFAF]"></p>
+        <input type="text" readonly placeholder="P4$5W0rD!" class="bg-[#24232C] text-[#e6e5ea]" id="password">
+        <p class="bi bi-clipboard text-[#A4FFAF]" id="copyBefore"></p>
+        <p id="copyText" class="text-[1em] text-[#A4FFAF] bi bi-clipboard-check hidden"></p>
     </div>
 
     <div class="flex flex-col justify-center items-center gap-[1em] p-[1em] bg-[#24232C] w-[16em] h-[fit-content] text-[#e6e5ea]">
         <div class="flex justify-between items-center bg-[#24232C] text-[#e6e5ea] gap-[4.3em]">
             <p class="text-[0.8em]">Character Length</p>
-            <p id="length" class="text-[1.2em] text-[#A4FFAF]">16</p>
+            <p id="length" class="text-[1.2em] text-[#A4FFAF]">6</p>
         </div>
         <div class="flex justify-center items-center">
             <input class="w-[14em]" type="range" min="6" max="16" value="6" id="range">
@@ -68,7 +69,7 @@
                 </div>
             </div>
         </div>
-        <button type="button" class="flex justify-center items-center p-[0.5em] bg-[#A4FFAF] text-[#24232C] w-[100%] h-[fit-content]">GENERATE</button>
+        <button id="button" type="button" class="flex justify-center items-center p-[0.5em] bg-[#A4FFAF] text-[#24232C] w-[100%] h-[fit-content]">GENERATE</button>
     </div>
 
     <!-- javacsript -->
