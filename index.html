@@ -25,6 +25,8 @@
 
 <body class="flex flex-col justify-center items-center gap-[1em] pt-[1em] bg-[#18171f] w-[100%] h-[100vh] text-[#e6e5ea]">
 
+    <h3 class="w-[100%] text-center text-[#A4FFAF] text-[1.4em]">Password Generator</h3>
+
     <div class="bg-[#24232C] p-[1em] flex justify-between items-center">
         <input type="text" readonly placeholder="P4$5W0rD!" class="bg-[#24232C] text-[#e6e5ea]">
         <p class="bi bi-clipboard text-[#A4FFAF]"></p>
@@ -36,7 +38,7 @@
             <p id="length" class="text-[1.2em] text-[#A4FFAF]">16</p>
         </div>
         <div class="flex justify-center items-center">
-            <input type="range" min="6" max="16" value="1" id="range">
+            <input class="w-[14em]" type="range" min="6" max="16" value="6" id="range">
         </div>
         <div class="flex w-[100%] h-[fit-content] justify-left items-center gap-[1em] text-[#e6e5ea]">
             <input type="checkbox" id="uppercase" class="check">
@@ -59,10 +61,10 @@
             <div class="flex justify-between items-center gap-[1em] text-[#fff] text-[0.8em]">
                 <p id="strength" class="text-[#e6e5ea]">TOO WEAK!</p>
                 <div class="flex justify-center items-center gap-[2px]">
-                    <span id="sp-1" class="w-[6px] h-[15px] border border-[#e6e5ea] border-[2px]"></span>
-                    <span id="sp-2" class="w-[6px] h-[15px] border border-[#e6e5ea] border-[2px]"></span>
-                    <span id="sp-3" class="w-[6px] h-[15px] border border-[#e6e5ea] border-[2px]"></span>
-                    <span id="sp-4" class="w-[6px] h-[15px] border border-[#e6e5ea] border-[2px]"></span>
+                    <span id="sp-1" class="w-[6px] h-[15px] border border-[#e6e5ea] border-[1px] bg-[#F64A4A]"></span>
+                    <span id="sp-2" class="w-[6px] h-[15px] border border-[#e6e5ea] border-[1px]"></span>
+                    <span id="sp-3" class="w-[6px] h-[15px] border border-[#e6e5ea] border-[1px]"></span>
+                    <span id="sp-4" class="w-[6px] h-[15px] border border-[#e6e5ea] border-[1px]"></span>
                 </div>
             </div>
         </div>
